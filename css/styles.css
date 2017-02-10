@@ -1,0 +1,34 @@
+
+sidebar{
+  float: left;
+  width: auto;
+  height: auto;
+  background-color: aqua;
+}
+menu{
+  float: left:
+}
+#photo{
+  text-align: right;
+}
+.header{
+  text-align: left;bottom: auto;
+  background-color: Aqua;
+}
+#content{
+  float: right;
+  width: 89%;
+  background-color:lightgreen ;
+
+}
+#sidebar{
+  float: left;
+  width: 10%;
+  border-right: 5px solid black;
+  background-color: lightblue;
+
+}
+#wrap{
+  border-top: 5px solid black;
+  overflow: visible;
+}

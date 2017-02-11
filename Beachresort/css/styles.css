@@ -1,0 +1,32 @@
+h1{
+  background-color: inherit;;
+  color: red;
+  text-align:center;
+  }
+
+  h2{
+    color:red;
+    background-color: inherit;
+    fonts: italic;
+    text-align: center;
+  }
+  #thanks{
+    float: right;
+
+  }
+  p{
+    font-family: sans-serif;
+  }
+  .intro {
+       color: green;}
+
+     #line2 {
+       color: green;
+     }
+  body{
+    background-color: powderblue;
+  }
+  ul{
+    font-size:20px;
+    line-height:30px:
+  }

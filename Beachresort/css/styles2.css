@@ -1,0 +1,16 @@
+.intro{
+  background-color: powderblue;
+  color: red;
+  width: 150%;
+  font-style: oblique;
+}
+.important {
+  border-spacing: 3px;
+  background-color: default;
+  text-align: center;
+  font-size: 150%
+}
+.my-class {
+       border: 2px solid green;
+        padding: 4px;
+     }

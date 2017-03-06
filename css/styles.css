@@ -1,37 +1,24 @@
-body{
+body {
   background-color: lightgrey;
 }
-sidebar{
-  float: left;
-  width: auto;
-  height: auto;
-  background-color: aqua;
-}
-menu{
-  float: left:
-}
-#photo{
+
+#hello {
+  color: black;
   text-align: left;
-  background-color: Aqua;
+  padding-top: 70px;
+  margin-top: 20px;
 }
-.header{
-  text-align: center;bottom: auto;
-  background-color: Aqua;
-}
-#content{
-  float: right;
-  width: 89%;
-  background-color:lightgreen ;
 
+#proj {
+  color: black;
+  text-decoration-style: dotted;
 }
-#sidebar{
-  float: left;
-  width: 10%;
-  border-right: 3px solid black;
-  background-color: lightblue;
 
+.container {
+  text-align: center;
 }
-#wrap{
-  border-top: 5px solid black;
-  overflow: visible;
+
+#carousel-example-generic {
+  overflow-y: hidden;
+  height: 400px;
 }

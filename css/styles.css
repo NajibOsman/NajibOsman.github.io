@@ -22,3 +22,38 @@ body {
   overflow-y: hidden;
   height: 400px;
 }
+
+.thumbnail {
+  min-height: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {}
+
+.social {
+  background-color: #99ca3d;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social:hover {
+  background-color: transparent;
+  color: #99ca3d;
+  border: 1px solid #99ca3d;
+}
+
+a {
+  text-decoration: none;
+}

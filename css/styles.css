@@ -163,15 +163,9 @@ li.nav-item .btn-white {
 .link-white:hover, .link-white:focus, .link-white:active {
   color: #dfe1e5 !important; }
 /*projects*/
-#mall-e {
-  background-image: url(../images/pingpong.jpg);
-}
-#billy {
- 
-}
-#pean {
-  background-image: url(../images/Resort.jpg);
-}
+
+/*Skills*/
+
 /*Styles for footer*/
 .center-items {
   display: flex;

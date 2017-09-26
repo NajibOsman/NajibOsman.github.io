@@ -1,19 +1,25 @@
-<<<<<<< HEAD
 
 # my-portfolio-website
+This is awebsite that talks about my personal life and work and also can act as my Cv.
+## Setup
 
-## In this website its all about my self and backgroud and it consist of :
+To clone this project, run the following commands in your terminal:
 
-### 1.career objectives.
+```
+git clone https://github.com/NajibOsman/NajibOsman.github.io
 
-#### 2.Educational background.
+### Technologies Used
 
-##### 3.Work and sales experience.
+* HTML5
+* CSS3
+* Bootstrap 3
+* JavaScript/jQuery
 
-###### Skills and Hobbies. as they are illustrated on my Portfolio website.
 
-=======
+## Contributing
 
-# my-portfolio-website
+I welcome all bug reports and pull requests. Please be as descriptive as possible in your commit messages. I do apologize in advance if i take a long time to review and incorporate your changes.
 
-> > > > > > > fa1e43fcd8e647a4cd8e1e2089e26fa638d75c74
+
+## License
+[MIT License](LICENSE)

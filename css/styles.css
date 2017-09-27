@@ -60,9 +60,11 @@ li.nav-item .btn-white {
   color: #ffffff; }
 
 .cover {
-  background: #2b2d34 url(../images/najlimur.jpeg) center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/najlimur.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50rem;
   height: auto;
   border-radius: 0;
   width: 100%;
@@ -162,9 +164,121 @@ li.nav-item .btn-white {
 
 .link-white:hover, .link-white:focus, .link-white:active {
   color: #dfe1e5 !important; }
+/*  Aboutme*/
+#najib {
+  width: 100%;
+  height: 100%;
+}
+#about{
+  background-color: transparent;
+}
+#about-text{
+  padding-top: 80px !important;
+}
 /*projects*/
 
 /*Skills*/
+@import url(https://fonts.googleapis.com/css?family=Exo);
+
+html {
+  background:  url(http://i43.tinypic.com/sfgmc3.gif);
+}
+.container-skills{
+  font-family: 'Exo', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.skills {
+  width:inherit;
+  position:relative;
+  float:left;
+  padding:30px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+ul { 
+  padding-top:50px;
+  & > li { 
+    margin-bottom:70px; 
+    background:#000; 
+    height:5px; 
+    border-radius:3px; 
+    border-left:1px solid #111; 
+    border-top:1px solid #111; 
+    border-right:1px solid #333; 
+    border-bottom:1px solid #333;
+    & em {
+      font-family: 'Exo', sans-serif;
+      font-size: 18px;
+      position:relative; 
+      top:-30px;
+    }
+    & span { 
+      height:1px; 
+      margin:2px 0; 
+      background:#2187e7; 
+      position:absolute;
+      box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
+    }
+  }
+}
+
+.html5 { 
+  width:90%;  
+  animation:html5 2s ease-out;
+}
+.css3 { 
+  width:90%;
+  animation:css3 2s ease-out; 
+}
+.jquery { 
+  width:50%;  
+  animation:jquery 2s ease-out;
+}
+.javascript { 
+  width:60%;  
+  animation:photoshop 2s ease-out;
+}
+.ruby { 
+  width:70%;  
+  animation:photoshop 2s ease-out;
+}
+.rubyonrails { 
+  width:80%;  
+  animation:photoshop 2s ease-out;
+}
+
+@keyframes html5 { 
+  0%  { width:0px;} 
+  100%{ width:90%;}  
+}
+@keyframes css3 {
+  0%  { width:0px;} 
+  100%{ width:90%;}  
+}
+@keyframes jquery {
+  0%  { width:0px;}
+  100%{ width:50%;}
+}
+@keyframes javascript {
+  0%  { width:0px;} 
+  100%{ width:60%;}  
+}
+@keyframes ruby {
+  0%  { width:0px;} 
+  100%{ width:70%;}  
+}
+@keyframes rubyonrails {
+  0%  { width:0px;} 
+  100%{ width:80%;}  
+}
 
 /*Styles for footer*/
 .center-items {
@@ -173,7 +287,7 @@ li.nav-item .btn-white {
   align-items: center;
 }
 
-.container {}
+.container-footer {}
 
 .social {
   background-color: #99ca3d;
@@ -193,18 +307,9 @@ li.nav-item .btn-white {
 a {
   text-decoration: none;
 }
-
-
 #footer {
-  background-color: black;
+  background-color: transparent;
 }
-
-#contact {
-  text-emphasis-style: dot;
-  text-align: center;
-  color: white;
-}
-
 #copi {
   text-align: center;
 }

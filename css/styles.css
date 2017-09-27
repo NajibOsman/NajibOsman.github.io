@@ -2,7 +2,7 @@
 body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #46484a; }
 
 a {
@@ -41,7 +41,9 @@ p {
   margin: 2rem auto; }
   
 .navbar-trans {
-  background: transparent; }
+  background: transparent; 
+  position: fixed;
+}
 
 a.navbar-brand, a.logo {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -178,109 +180,114 @@ li.nav-item .btn-white {
 /*projects*/
 
 /*Skills*/
-@import url(https://fonts.googleapis.com/css?family=Exo);
+@import "bourbon";
 
-html {
-  background:  url(http://i43.tinypic.com/sfgmc3.gif);
+/*// ------------ START Boring stuff*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+$green: #2ea994;
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background: #13171b;
+  color: white;
+  text-align: center;
 }
-.container-skills{
-  font-family: 'Exo', sans-serif;
-  font-size: 12px;
-  color: #fff;
-  width: 300px;
-  margin: 20px auto;
+
+.h1 {
+    font-size: 30px;
 }
+
+/*// --- END Boring stuff
+
+// --- START Fun stuff*/
 
 .skills {
-  width:inherit;
-  position:relative;
-  float:left;
-  padding:30px 0;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 25px;
-}
-
-ul { 
-  padding-top:50px;
-  & > li { 
-    margin-bottom:70px; 
-    background:#000; 
-    height:5px; 
-    border-radius:3px; 
-    border-left:1px solid #111; 
-    border-top:1px solid #111; 
-    border-right:1px solid #333; 
-    border-bottom:1px solid #333;
-    & em {
-      font-family: 'Exo', sans-serif;
-      font-size: 18px;
-      position:relative; 
-      top:-30px;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+.skill {
+    display: block;
+          position: relative; // For positioning bar pseudo elements
+          height: 60px;
+          margin: 10px auto;
+    width: 90%;
+    @media only screen and (min-width: 900px) {
+      display: inline-block;
+            width: percentage(1/4);
+      margin: 10px;
     }
-    & span { 
-      height:1px; 
-      margin:2px 0; 
-      background:#2187e7; 
-      position:absolute;
-      box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      border-radius: 20px;
+      margin-top: 40px;
+    }
+    &:before {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 20px;
+      background: #eeeeee;
+    }
+    &:after {
+      background-color: $green;
+      background: repeating-linear-gradient(-45deg, $green, $green 10px, lighten($green, 3) 10px, lighten($green, 3) 20px);
+      height: 16px; 
+      top: 2px;
+      right: 95%;
+      bottom: 2px;
+      left: 2px;
+      @include animation(fill 2s both);
+    }
+    @for $i from 1 through 5 {
+                &:nth-child(#{$i}):after {
+          @include animation-delay(#{$i * 0.5}s);
+      }
+            }
+    &[aria-label="novice"]:after {
+      right: 75%;
+    }
+    &[aria-label="average"]:after {
+      right: 50%;
+    }
+    &[aria-label="adept"]:after {
+      right: 35%;
+    }
+    &[aria-label="advanced"]:after {
+      right: 20%;
+    }
+    &[aria-label="elite"]:after {
+      right: 10%;
+    }
+    &[aria-label="pro"]:after {
+      right: 2px;
+    }
+    &[aria-label="l33tasuar"]:after {
+      // turn it up to 11!
+      right: -10%;
     }
   }
 }
 
-.html5 { 
-  width:90%;  
-  animation:html5 2s ease-out;
+@include keyframes(fill) {
+  from {
+    right: 100%;
+  }
 }
-.css3 { 
-  width:90%;
-  animation:css3 2s ease-out; 
-}
-.jquery { 
-  width:50%;  
-  animation:jquery 2s ease-out;
-}
-.javascript { 
-  width:60%;  
-  animation:photoshop 2s ease-out;
-}
-.ruby { 
-  width:70%;  
-  animation:photoshop 2s ease-out;
-}
-.rubyonrails { 
-  width:80%;  
-  animation:photoshop 2s ease-out;
-}
-
-@keyframes html5 { 
-  0%  { width:0px;} 
-  100%{ width:90%;}  
-}
-@keyframes css3 {
-  0%  { width:0px;} 
-  100%{ width:90%;}  
-}
-@keyframes jquery {
-  0%  { width:0px;}
-  100%{ width:50%;}
-}
-@keyframes javascript {
-  0%  { width:0px;} 
-  100%{ width:60%;}  
-}
-@keyframes ruby {
-  0%  { width:0px;} 
-  100%{ width:70%;}  
-}
-@keyframes rubyonrails {
-  0%  { width:0px;} 
-  100%{ width:80%;}  
-}
+ /*--- END Fun stuff*/
 
 /*Styles for footer*/
+#phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .center-items {
   display: flex;
   justify-content: center;

@@ -43,7 +43,8 @@ p {
 .navbar-trans {
   background: transparent; 
   position: fixed;
-  color: #696b6e;
+ /* color: #696b6e;*/
+  color: black;
 }
 
 a.navbar-brand, a.logo {

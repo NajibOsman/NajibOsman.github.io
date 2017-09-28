@@ -43,13 +43,13 @@ p {
 .navbar-trans {
   background: transparent; 
   position: fixed;
- /* color: #696b6e;*/
-  color: black;
+  color: #696b6e;
+ 
 }
 
 a.navbar-brand, a.logo {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff !important;
+  color: aqua !important;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0; }
